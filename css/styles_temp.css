@@ -1,0 +1,27 @@
+nav{
+    background: orange;
+}
+
+.container-text{
+    background: pink;
+}
+
+#section-about{
+    background: rgb(1, 191, 254);
+}
+
+#section-jobs{
+    background: lightgreen;
+}
+
+#section-skills{
+    background: violet;
+}
+
+#section-contact{
+    background: coral;
+}
+
+.section-socialMedia{
+    background: gold;
+}
