@@ -155,33 +155,60 @@ header .container-text .text .profession{
     }
 }
 
+/* MAIN */
+main{
+    background: #f2f2f2;
+}
+
+main .container{
+    overflow: visible;
+}
+
 /* ABOUT */
 #section-about{
-    padding: 80px 0;
+
     background: #ffffff;
+    padding: 80px 0;
 }
 
 #section-about .container{
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 40px;
+}
+
+#section-about .photo{
+    width: 200px;
+    height: 200px;
+    margin-top: -60px;
 }
 
 #section-about .photo img{
-    width: 220px;
-    height: 220px;
-    object-fit: cover;
     border-radius: 50%;
-    border: 5px solid #3b82f6;
+    border: 6px solid rgba(255,255,255,0.8);
 }
 
-#section-about .title{
-    font-size: 32px;
-    margin-bottom: 15px;
+#section-about .text{
+    width: 80%;
+    text-align: center;
+}
+
+#section-about .text .title{
+    font-size: 34px;
+    font-weight: 300;
     color: #1e3a8a;
+    margin-bottom: 30px;
 }
 
-#section-about .bold{
+#section-about .text p{
+    font-size: 18px;
+    line-height: 30px;
+    color: #5b6470;
+    margin-bottom: 20px;
+}
+
+#section-about .text .bold{
+    color: #111827;
     font-weight: 700;
 }
 
@@ -361,8 +388,45 @@ header .container-text .text .profession{
         font-size: 20px;
     }
 
-    #section-about .container{
-        flex-direction: column;
+    #section-about .text{
+        width: 100%;
+    }
+}
+
+
+/* Media Query CSS */
+
+@media screen and (max-width: 800px)
+{
+    header .menu{
         text-align: center;
+    }
+
+    main #section-jobs .container-jobs .job{
+        width: 46%;
+    }
+
+    main #section-skills .container-skill .skill{
+        width: 46%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    header .container-text .text .name{
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    header .container-text .text .name{
+        font-size: 35px;
+    }
+
+    header .container-text .text .profession{
+        font-size: 18px;
+    }
+
+    footer #section-socialMedia .container a {
+        padding: 20px;
     }
 }
